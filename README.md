@@ -15,22 +15,30 @@ This project is a microservices architecture built with **Node.js** and **TypeSc
 ## 🔍 Preview
 
 
-> Example of a complete distributed Kong and RabbitMQ flowing from the `orders` service.
+<details>
+  <summary>📦 Example of a complete distributed Kong and RabbitMQ flow</summary>
 
-![Image](https://github.com/user-attachments/assets/eacb0ed4-6264-41c7-9004-f33fc31db0e9)
+  ![Image](https://github.com/user-attachments/assets/eacb0ed4-6264-41c7-9004-f33fc31db0e9)
+  
+  ![Image](https://github.com/user-attachments/assets/c6ed14ae-024b-4900-833f-4f6e50fd51bf)
 
-![Image](https://github.com/user-attachments/assets/c6ed14ae-024b-4900-833f-4f6e50fd51bf)
+</details>
 
-> Example of a complete distributed trace flowing from the `orders` service to the `invoices` service.
+<details>
+  <summary>📊 Example of a complete distributed trace from <code>orders</code> to <code>invoices</code></summary>
 
-![Image](https://github.com/user-attachments/assets/6905e7ee-817c-454f-9042-e1d85abadbce)
+  ![Image](https://github.com/user-attachments/assets/6905e7ee-817c-454f-9042-e1d85abadbce)
+  
+  ![Image](https://github.com/user-attachments/assets/7f507e8d-7fa2-4984-bf1f-a72f93d3ff72)
 
-![Image](https://github.com/user-attachments/assets/7f507e8d-7fa2-4984-bf1f-a72f93d3ff72)
+</details>
 
-> Example of a deployment of the services on AWS.
-> 
-![Image](https://github.com/user-attachments/assets/c2252723-9584-493b-8034-9b742f31b1a7)
+<details>
+  <summary>☁️ Example of service deployment on AWS</summary>
 
+  ![Image](https://github.com/user-attachments/assets/c2252723-9584-493b-8034-9b742f31b1a7)
+
+</details>
 
 
 </div>
@@ -46,7 +54,9 @@ The project was developed with the following technologies:
 <details>
 
 <details> <summary><strong>Backend</strong></summary>
+  
 Node.js
+
 
 Fastify
 
@@ -81,7 +91,7 @@ dotenv
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Pre-requisites
 
 - [Node.js](https://nodejs.org/)
 - [Docker](https://www.docker.com/)
