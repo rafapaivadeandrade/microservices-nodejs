@@ -1,3 +1,5 @@
+import "@opentelemetry/auto-instrumentations-node/register";
+
 import { fastify } from "fastify";
 import { randomUUID } from "node:crypto";
 import { setTimeout } from "node:timers/promises";
@@ -9,7 +11,6 @@ import {
   validatorCompiler,
   type ZodTypeProvider,
 } from "fastify-type-provider-zod";
-import { channels } from "../broker/channels/index.ts";
 import { schema } from "../db/schema/index.ts";
 import { db } from "../db/client.ts";
 import { dispatchOrderCreated } from "../broker/messages/order-created.ts";
@@ -41,16 +42,15 @@ app.post(
     console.log("Creating an order with amount", amount);
 
     const orderId = randomUUID();
-
     await db.insert(schema.orders).values({
       id: orderId,
       customerId: "B9176D35-7276-4255-A323-D825CAEE03B5",
       amount,
     });
 
-    const span = tracer.startSpan("eu acho que aqui ta dando merda");
+    const span = tracer.startSpan("test tracer span");
 
-    span.setAttribute("teste", "Hello World");
+    span.setAttribute("test", "Hello World");
 
     await setTimeout(2000);
 
