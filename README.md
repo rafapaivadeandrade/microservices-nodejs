@@ -53,7 +53,7 @@ The project was developed with the following technologies:
 
 <details>
 
-<details> <summary><strong>Backend</strong></summary>
+<summary><strong>Backend</strong></summary>
   
 Node.js
 
@@ -77,7 +77,9 @@ Kong API Gateway
 TypeScript
 
 </details> <details> <summary><strong>Dev & Infra</strong></summary>
+  
 AWS
+
 
 Docker
 
